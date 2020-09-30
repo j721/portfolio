@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project (){
+function Projects (){
     return(
         <div>
             <h2>Projects</h2>
