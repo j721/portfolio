@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from '../src/components/NavBar';
 import  Projects  from "../src/components/Projects";
 import  Contact  from "../src/components/Contact";
 import "./App.css";
@@ -11,7 +12,8 @@ function App() {
         I'm a fullstack developer who loves to learning new technologies and
         create beautiful projects.
       </p>
-
+      <NavBar/>
+      
       <Projects/>
 
       <Contact/>
