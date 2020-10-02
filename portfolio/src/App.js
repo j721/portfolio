@@ -7,19 +7,13 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
-        <Route path="/projects">
-          <Projects/>
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      
+    <div className="AppContainer">
+
+      <Route exact path="/" component={Home} />
+
+      <Route path="/projects" component={Projects} />
+
+      <Route path="/contact" component={Contact} />
     </div>
   );
 }

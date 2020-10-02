@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
@@ -11,8 +10,6 @@ const Home = () => {
         I'm a fullstack developer who loves to learning new technologies and
         creating beautiful projects.
       </p>
-
-      <NavBar />
 
       <Projects />
 
