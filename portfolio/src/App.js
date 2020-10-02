@@ -1,27 +1,25 @@
 import React from "react";
-import NavBar from "../src/components/NavBar";
+import Home from "../src/components/Home";
+import { Route, useHistory, Switch } from "react-router-dom";
 import Projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
-
-import { Route, useHistory, Switch } from "react-router-dom";
-
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="Contents-Container">
-        <h1>Hi, I'm Julia.</h1>
-        <p>
-          I'm a fullstack developer who loves to learning new technologies and
-          creating beautiful projects.
-        </p>
-        <NavBar />
-
-        <Projects />
-
-        <Contact />
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+        <Route path="/projects">
+          <Projects/>
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      
     </div>
   );
 }
