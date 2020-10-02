@@ -2,6 +2,9 @@ import React from "react";
 import NavBar from "../src/components/NavBar";
 import Projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
+
+import { Route, useHistory, Switch } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
@@ -11,7 +14,7 @@ function App() {
         <h1>Hi, I'm Julia.</h1>
         <p>
           I'm a fullstack developer who loves to learning new technologies and
-          create beautiful projects.
+          creating beautiful projects.
         </p>
         <NavBar />
 
